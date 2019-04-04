@@ -13,7 +13,7 @@ ExternalProject_Add(pyqt5-5.10.1
     URL_MD5 7bd9ae59c2c4d516dc372577ef344af0
     INSTALL_DIR ${CMAKE_INSTALL_PREFIX}
     CONFIGURE_COMMAND
-        ${PYTHON_EXECUTABLE} configure.py --destdir <INSTALL_DIR>/lib/site-packages --bindir <INSTALL_DIR>/bin --no-sip-files --no-tools --qmake ${QT_QMAKE_EXECUTABLE} --confirm-license --verbose
+        ${PYTHON_EXECUTABLE} configure.py --destdir <INSTALL_DIR>/lib/site-packages --bindir <INSTALL_DIR>/bin --no-tools --qmake ${QT_QMAKE_EXECUTABLE} --confirm-license --verbose
         --sip-incdir ${CMAKE_INSTALL_PREFIX}/include
         --disable QtNfc
         --disable QtX11Extras
